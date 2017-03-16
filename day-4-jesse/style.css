@@ -46,6 +46,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/*first section background*/
 .background-image{
   background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
   background-repeat: no-repeat;
@@ -56,95 +58,177 @@ table {
 .background {
   background-color: rgba(0,0,0,0.5);
   position: absolute;
-  top: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*nav bar*/
+nav {
+ background-color: rgba(0, 0, 0, .5);
+ position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
-}
-/* nav bar*/
-nav {
-background-color: rgba(0, 0, 0, .5);
- position: fixed;
- left: 0;
- right: 0;
- top: 0;
+  top: 0;
  z-index: 1;
 }
 ul {
- overflow: auto;
  margin-right: 40px;
+ overflow: auto;
 }
 img {
-height: 36px;
-float: left;
-margin: 12px 0 12px 40px;
+  float: left;
+  height: 36px;
+  margin: 12px 0 12px 40px;
 }
 li a {
+  color: white;
   float: right;
+  font-family: "open sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
   padding: 20px 0 20px 40px;
   text-transform: uppercase;
-  font-family: "open sans", sans-serif;
-  font-weight: 100;
-  color: white;
-  font-size: 18px;
   text-decoration: none;
-
 }
 li a:hover {
   color: #E0CB77;
 }
-/*section 1*/
+/*section 1 text*/
 .container {
-  max-width: 1300px;
   margin: 0 auto 0 auto;
+  max-width: 1300px;
   padding: 120px 0 0 0;
   text-align: center;
-
 }
-
 .header1 {
   color: #fff;
-  text-align: center;
-  text-transform: uppercase;
   font-weight: 100;
   font-family: "merriweather", serif;
   font-size: 3.2rem;
   line-height: 4rem;
-
+  text-align: center;
+  text-transform: uppercase;
 }
-
 span {
   border-bottom: dotted 1px white;
 }
-
 .header2 {
-  font-family: "open sans", sans-serif;
   color: #fff;
+  font-family: "open sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 2.3rem;
-  max-width: 80%;
   margin: 3% auto 3%;
-
+  max-width: 80%;
 }
-
 .button a {
   border: 2px #E0CB77 solid;
   border-radius: 2px;
+  color: white;
   font-family: "open sans", sans-serif;
   font-size: 22px;
-  color: white;
-  text-decoration: none;
+  margin-top: 25px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 25px;
-
+  text-decoration: none;
+}
+.button a:hover {
+  color: rgba(158, 142, 78, 1.0);
+  background: #e0cb77;
+}
+/*section 2*/
+.recent-projects {
+  overflow: auto;
+  padding: 50px 0;
+}
+.projects-row {
+  margin: 0 auto;
+  width: 90%;
+}
+.project {
+  background-color: grey;
+  float: left;
+  height: 200px;
+  outline: solid 1px red;
+  width: 33.3333%;
+}
+/*section 3*/
+.story {
+  background-color: grey;
+  padding: 50px;
+}
+.story-details {
+  border: solid 1px yellow;
+  height: 400px;
+  width: 50%;
+}
+/*section 4*/
+.what-i-do{
+  background-color: blue;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.columns{
+  margin:0 auto;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 90%;
+}
+.thing {
+  background-color: grey;
+  outline: 2px solid red;
+  width: 25%;
+  float: left;
+  height: 400px;
+}
+.vader {
+  clear: all;
+  background-color: grey;
+  outline: 2px solid red;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
 }
 
-.button a:hover {
-  background: #e0cb77;
-  color: rgba(158, 142, 78, 1.0);
-
+/*section 5*/
+.links {
+  background-color: yellow;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+}
+.article {
+  float: left;
+  height: 400px;
+  outline: black 2px solid;
+  width: 50%;
+}
+/*section 6*/
+.copyright-background {
+  background-color: red;
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+.sm-container {
+  margin: 0 auto;
+  outline: solid black 2px;
+  width: 20%;
+  overflow: auto;
+}
+.social-media {
+  background-color: green;
+  border-radius: 100px;
+  height: 70px;
+  outline: solid black 2px;
+  width: 25%;
+  float: left;
 }
