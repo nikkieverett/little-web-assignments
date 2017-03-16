@@ -1,0 +1,9 @@
+p {
+  background-color: pink;
+  line-height: 3em;
+}
+
+img {
+  width: 300px;
+  float: right;
+}

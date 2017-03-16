@@ -22,6 +22,15 @@
   right: 0px;
 }
 
+.inner-box-2 {
+  background-color: red;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 50px;
+
+}
+
 nav p {
   background-color: rgba(0,0,0, .5);
   position: fixed;
