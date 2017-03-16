@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ‘’;
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.background-image{
+  background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+.background {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* nav bar*/
+nav {
+background-color: rgba(0, 0, 0, .5);
+ position: fixed;
+ left: 0;
+ right: 0;
+ top: 0;
+ z-index: 1;
+}
+ul {
+ overflow: auto;
+ margin-right: 40px;
+}
+img {
+height: 36px;
+float: left;
+margin: 12px 0 12px 40px;
+}
+li a {
+  float: right;
+  padding: 20px 0 20px 40px;
+  text-transform: uppercase;
+  font-family: "open sans", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+
+}
+li a:hover {
+  color: #E0CB77;
+}
+/*section 1*/
+.container {
+  max-width: 1300px;
+  margin: 0 auto 0 auto;
+  padding: 120px 0 0 0;
+  text-align: center;
+
+}
+
+.header1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "merriweather", serif;
+  font-size: 3.2rem;
+  line-height: 4rem;
+
+}
+
+span {
+  border-bottom: dotted 1px white;
+}
+
+.header2 {
+  font-family: "open sans", sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 2.3rem;
+  max-width: 80%;
+  margin: 3% auto 3%;
+
+}
+
+.button a {
+  border: 2px #E0CB77 solid;
+  border-radius: 2px;
+  font-family: "open sans", sans-serif;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 25px;
+
+}
+
+.button a:hover {
+  background: #e0cb77;
+  color: rgba(158, 142, 78, 1.0);
+
+}
