@@ -72,16 +72,16 @@ nav {
   top: 0;
  z-index: 1;
 }
-ul {
+nav ul {
  margin-right: 40px;
  overflow: auto;
 }
-img {
+nav li img {
   float: left;
   height: 36px;
   margin: 12px 0 12px 40px;
 }
-li a {
+nav li a {
   color: white;
   float: right;
   font-family: "open sans", sans-serif;
@@ -91,7 +91,7 @@ li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-li a:hover {
+nav li a:hover {
   color: #E0CB77;
 }
 /*section 1 text*/
@@ -142,19 +142,44 @@ span {
 /*section 2*/
 .recent-projects {
   overflow: auto;
-  padding: 50px 0;
 }
 .projects-row {
   margin: 0 auto;
   width: 90%;
 }
 .project {
-  background-color: grey;
   float: left;
-  height: 200px;
-  outline: solid 1px red;
-  width: 33.3333%;
+  width: 28.3333%;
+  margin: 50px 2% 3%;
+  padding-right: 10px;
+  /*outline: 2px green solid;*/
 }
+.project h3, p {
+  max-width: 100%;
+  text-align: center;
+  line-height: 2em;
+  /*border: 2px red solid;*/
+}
+.project h3 {
+  font-size: 2em;
+  font-family: "merriweather", serif;
+  font-weight: 300;
+  color: #3195C2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*border: solid 2px blue;*/
+}
+.project p {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #8492a4;
+  /*border: 2px yellow solid;*/
+}
+.project img {
+  width: 100%;
+}
+
 /*section 3*/
 .story {
   background-color: grey;
