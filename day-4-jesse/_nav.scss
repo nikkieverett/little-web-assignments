@@ -1,0 +1,30 @@
+nav {
+ background-color: rgba(0, 0, 0, .5);
+ position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+ z-index: 1;
+}
+nav ul {
+ margin-right: 40px;
+ overflow: auto;
+}
+nav li img {
+  float: left;
+  height: 36px;
+  margin: 12px 0 12px 40px;
+}
+nav li a {
+  color: white;
+  float: right;
+  font-family: "open sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px 0 20px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #E0CB77;
+}

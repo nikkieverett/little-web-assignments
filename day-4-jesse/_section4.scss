@@ -1,0 +1,30 @@
+/*section 4*/
+.what-i-do{
+  background-color: blue;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.columns{
+  margin:0 auto;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 90%;
+}
+.thing {
+  background-color: grey;
+  outline: 2px solid red;
+  width: 25%;
+  float: left;
+  height: 400px;
+}
+.vader {
+  clear: all;
+  background-color: grey;
+  outline: 2px solid red;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}

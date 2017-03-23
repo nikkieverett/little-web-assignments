@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-  v2.0 | 20110126
-  License: none (public domain)
-*/
-
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,71 +12,53 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+  display: block; }
+
 body {
-    line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-    list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-    quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: ‘’;
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+  content: ‘’;
+  content: none; }
 
-/*first section background*/
-.background-image{
-  background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  position: relative;
-}
-.background {
-  background-color: rgba(0,0,0,0.5);
-  position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-/*nav bar*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 nav {
- background-color: rgba(0, 0, 0, .5);
- position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
- z-index: 1;
-}
+  z-index: 1; }
+
 nav ul {
- margin-right: 40px;
- overflow: auto;
-}
+  margin-right: 40px;
+  overflow: auto; }
+
 nav li img {
   float: left;
   height: 36px;
-  margin: 12px 0 12px 40px;
-}
+  margin: 12px 0 12px 40px; }
+
 nav li a {
   color: white;
   float: right;
@@ -89,18 +67,34 @@ nav li a {
   font-weight: 100;
   padding: 20px 0 20px 40px;
   text-transform: uppercase;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 nav li a:hover {
-  color: #E0CB77;
-}
+  color: #E0CB77; }
+
+/*section 1 background  image*/
+.background-image {
+  background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative; }
+
+.background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
 /*section 1 text*/
 .container {
   margin: 0 auto 0 auto;
   max-width: 1300px;
   padding: 120px 0 0 0;
-  text-align: center;
-}
+  text-align: center; }
+
 .header1 {
   color: #fff;
   font-weight: 100;
@@ -108,11 +102,11 @@ nav li a:hover {
   font-size: 3.2rem;
   line-height: 4rem;
   text-align: center;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 span {
-  border-bottom: dotted 1px white;
-}
+  border-bottom: dotted 1px white; }
+
 .header2 {
   color: #fff;
   font-family: "open sans", sans-serif;
@@ -120,8 +114,8 @@ span {
   font-weight: 100;
   line-height: 2.3rem;
   margin: 3% auto 3%;
-  max-width: 80%;
-}
+  max-width: 80%; }
+
 .button a {
   border: 2px #E0CB77 solid;
   border-radius: 2px;
@@ -133,93 +127,103 @@ span {
   padding-bottom: 12px;
   padding-left: 40px;
   padding-right: 40px;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 .button a:hover {
-  color: rgba(158, 142, 78, 1.0);
-  background: #e0cb77;
-}
-/*section 2*/
+  color: #9e8e4e;
+  background: #e0cb77; }
+
 .recent-projects {
   overflow: auto;
-}
-.projects-row {
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   width: 90%;
-}
+  /*outline: 2px green solid;*/ }
+
 .project {
   float: left;
   width: 28.3333%;
-  margin: 50px 2% 3%;
-  padding-right: 10px;
-  /*outline: 2px green solid;*/
-}
+  margin: 0 2% 50px 2%;
+  /*outline: 2px green solid;*/ }
+
 .project h3, p {
   max-width: 100%;
   text-align: center;
   line-height: 2em;
-  /*border: 2px red solid;*/
-}
+  /*border: 2px red solid;*/ }
+
 .project h3 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: "merriweather", serif;
-  font-weight: 300;
   color: #3195C2;
   padding-top: 15px;
   padding-bottom: 15px;
-  /*border: solid 2px blue;*/
-}
+  /*border: solid 2px blue;*/ }
+
 .project p {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   color: #8492a4;
-  /*border: 2px yellow solid;*/
-}
+  /*border: 2px yellow solid;*/ }
+
 .project img {
-  width: 100%;
-}
+  width: 100%; }
+
+@media (max-width: 1116px) {
+  .project {
+    width: 45.7%;
+    font-size: 80%; } }
+
+@media (max-width: 612px) {
+  .project {
+    font-size: 60%; } }
+
+@media (max-width: 500px) {
+  .project {
+    float: none;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    font-size: 100%; } }
 
 /*section 3*/
 .story {
   background-color: grey;
-  padding: 50px;
-}
+  padding: 50px; }
+
 .story-details {
   border: solid 1px yellow;
   height: 400px;
-  width: 50%;
-}
+  width: 50%; }
+
 /*section 4*/
-.what-i-do{
+.what-i-do {
   background-color: blue;
   height: 800px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 50px;
-}
-.columns{
-  margin:0 auto;
+  padding-bottom: 50px; }
+
+.columns {
+  margin: 0 auto;
   overflow: auto;
   padding-top: 20px;
   padding-bottom: 0px;
-  width: 90%;
-}
+  width: 90%; }
+
 .thing {
   background-color: grey;
   outline: 2px solid red;
   width: 25%;
   float: left;
-  height: 400px;
-}
+  height: 400px; }
+
 .vader {
   clear: all;
   background-color: grey;
   outline: 2px solid red;
   width: 90%;
   height: 400px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /*section 5*/
 .links {
@@ -228,32 +232,31 @@ span {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 90%;
-}
+  width: 90%; }
+
 .article {
   float: left;
   height: 400px;
   outline: black 2px solid;
-  width: 50%;
-}
+  width: 50%; }
+
 /*section 6*/
 .copyright-background {
   background-color: red;
   height: 500px;
   margin: 0 auto;
-  width: 100%;
-}
+  width: 100%; }
+
 .sm-container {
   margin: 0 auto;
   outline: solid black 2px;
   width: 20%;
-  overflow: auto;
-}
+  overflow: auto; }
+
 .social-media {
   background-color: green;
   border-radius: 100px;
   height: 70px;
   outline: solid black 2px;
   width: 25%;
-  float: left;
-}
+  float: left; }

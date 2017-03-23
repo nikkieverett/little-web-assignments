@@ -1,0 +1,56 @@
+// section 2
+.recent-projects {
+  overflow: auto;
+  margin: 50px auto 0 auto;
+  width: 90%;
+  /*outline: 2px green solid;*/
+}
+.project {
+  float: left;
+  width: 28.3333%;
+  margin: 0 2% 50px 2%;
+  /*outline: 2px green solid;*/
+}
+.project h3, p {
+  max-width: 100%;
+  text-align: center;
+  line-height: 2em;
+  /*border: 2px red solid;*/
+}
+.project h3 {
+  font-size: 1.6em;
+  font-family: "merriweather", serif;
+  color: #3195C2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*border: solid 2px blue;*/
+}
+.project p {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #8492a4;
+  /*border: 2px yellow solid;*/
+}
+.project img {
+  width: 100%;
+}
+@media (max-width: 1116px) {
+  .project {
+    width: 45.7%;
+    font-size: 80%;
+  }
+}
+@media (max-width: 612px) {
+  .project {
+    font-size: 60%;
+  }
+}
+@media (max-width:500px) {
+  .project {
+    float: none;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    font-size: 100%;
+  }
+}

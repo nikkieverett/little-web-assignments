@@ -1,0 +1,50 @@
+header {
+  height: 100px;
+  background-color: green;
+  color: white;
+}
+h1 {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.column {
+  float: left;
+  width: 23%;
+  height: 350px;
+  outline: grey solid 1px;
+  margin: 10px 1%;
+  background-color: rgba(237, 237, 237, 1.0);
+}
+.column {
+  margin: 10px 1%;
+}
+
+@media (max-width: 800px) {
+  .column {
+    width: 48%;
+    margin: 10px 1%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin: 10px 0%;
+  }
+}
+.column p {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+footer {
+  clear: both;
+  background-color: green;
+  color: white;
+  height: 60px;
+}
+footer p {
+  padding-top: 20px;
+}

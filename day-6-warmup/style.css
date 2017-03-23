@@ -1,0 +1,60 @@
+
+.container {
+  margin: 0 auto;
+  width: 60%;
+  overflow: auto;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  height: 150px;
+  background-color: yellow;
+}
+@media (max-width: 600px){
+  .column1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  height: 150px;
+  background-color: red;
+}
+@media (max-width: 600px){
+  .column2 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.section2 {
+  clear: both;
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+
+}
+.column3 {
+  float: left;
+  width: 33.3333%;
+  height: 150px;
+  background-color: green;
+}
+.column4 {
+  float: left;
+  width: 33.3333%;
+  height: 150px;
+  background-color: pink;
+}
+.column5 {
+  float: left;
+  width: 33.3333%;
+  height: 150px;
+  background-color: rgba(250, 128, 114, 1.0);
+}
