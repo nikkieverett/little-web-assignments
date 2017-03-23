@@ -1,0 +1,38 @@
+.container {
+  max-width: 960px;
+  margin: 10px auto;
+  outline: 2px black solid;
+  overflow: auto;
+}
+.row {
+  border-bottom: 2px black solid;
+  overflow: auto;
+}
+.box {
+  min-height: 200px;
+  width: 49%;
+  outline: 2px black solid;
+}
+.one {
+  background-color: pink;
+  float: left;
+  margin: 1% 0 1% 1%;
+
+}
+.two {
+  background-color: yellow;
+  float: right;
+  margin: 1% 1% 1% 0;
+
+}
+.three {
+  background-color: blue;
+  float: left;
+  margin: 1% 0 1% 1%;
+
+}
+@media(max-width: 700px) {
+  .box{
+    width: 98%;
+  }
+}
