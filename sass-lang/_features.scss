@@ -1,20 +1,26 @@
 .features {
   background-color: white;
   margin: 0 auto;
-  width: 80%;
+  max-width: 960px;
   height: 100%;
   overflow: auto;
 
   .entry{
     float: left;
-    width: 29.333%;
-    margin: 10px 2%;
-    height: 200px;
+    width: 31.333%;
+    margin: 10px 1%;
+    height: 100%;
     outline: grey 2px solid;
   }
   h2 {
     font-size: 2em;
     color: grey;
   }
-
+  @media (max-width: 763px){
+    .entry{
+      float: none;
+      width: 98%;
+      margin: 1%;
+    }
+  }
 }

@@ -1,36 +1,78 @@
-.container{
-  width: 90%;
-  margin: 0 auto;
-}
-
 nav {
   background-color: rgba(236, 236, 236, 1.0);
+  font-size: 1.5em;
+  height: 100%;
   margin: 0 auto;
-  width: 100%;
-  height: 200px;
   padding-top: 30px;
+  width: 100%;
 
   .logo {
     background-color: pink;
     float: left;
-    width: 100px;
     height: 100px;
     margin-left: 30px;
+    width: 100px;
+  }
+  @media (max-width: 767px) {
+   .logo {
+     height: 50px;
+     margin-left: 10px;
+     width: 50px;
+    }
   }
   .links ul {
-    overflow: auto;
     margin-right: 30px;
+    overflow: auto;
   }
   .links li {
     float: right;
     font-size: 1.6em;
     margin-right: 30px;
   }
+  @media (max-width: 1023px){
+    .links li {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 767px) {
+    .links ul {
+      float: right;
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+    .links li {
+      float: none;
+      font-size: .5em;
+      margin-right: 0;
+    }
+  }
   .superpower {
-    clear:both;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    clear: both;
     font-size: 3em;
+    margin: 1%;
+    padding: 10px;
+    text-align: center;
+    width: 96%;
+  }
+  @media (max-width: 1023px){
+    .superpower {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 767px) {
+    .superpower {
+      font-size: 1em;
+    }
+  }
+}
+
+// @media (max-width: 1023px) {
+//   nav {
+//     font-size: 1em;
+//   }
+// }
+@media (max-width: 767px) {
+  nav {
+    padding-top: 10px;
   }
 }
