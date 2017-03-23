@@ -1,0 +1,20 @@
+.features {
+  background-color: white;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+
+  .entry{
+    float: left;
+    width: 29.333%;
+    margin: 10px 2%;
+    height: 200px;
+    outline: grey 2px solid;
+  }
+  h2 {
+    font-size: 2em;
+    color: grey;
+  }
+
+}
