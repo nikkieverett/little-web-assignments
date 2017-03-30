@@ -1,0 +1,62 @@
+@import 'cssreset';
+
+$main-color: rgb(202, 202, 202);
+$secondary-color: rgba(119, 119, 119, 1.0);
+
+.octodex {
+  width: 98%;
+  margin: 0 auto;
+}
+.octocat {
+  float: right;
+  margin: 1%;
+  width: 31.333%;
+}
+.octocat img{
+  width: 100%;
+  border: 1px solid $main-color;
+  border-radius: 3px;
+}
+@media (max-width: 1120px) {
+  .octocat {
+    width: 48%;
+  }
+}
+@media (max-width: 600px) {
+  .octocat {
+    float: none;
+    width: 98%;
+  }
+}
+.image-footer {
+  overflow: auto;
+  border-bottom: $main-color 1px solid;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.image-number {
+  color: $main-color;
+  float: left;
+}
+.authors {
+  float: right;
+}
+.authors img {
+  width: 28px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.image-caption {
+  float: right;
+  text-align: right;
+  margin-left: 5px;
+}
+.image-caption span{
+  color:$secondary-color;
+}
+.image-caption a {
+  color: black;
+  text-decoration: none;
+}
