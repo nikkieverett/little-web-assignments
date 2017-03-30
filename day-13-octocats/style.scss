@@ -33,11 +33,27 @@ $secondary-color: rgba(119, 119, 119, 1.0);
   border-bottom: $main-color 1px solid;
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .image-number {
   color: $main-color;
-  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+
+}
+.image-caption {
+  float: right;
+  margin-left: 5px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.image-caption span{
+  color:$secondary-color;
+}
+.image-caption a {
+  color: black;
+  text-decoration: none;
 }
 .authors {
   float: right;
@@ -46,17 +62,5 @@ $secondary-color: rgba(119, 119, 119, 1.0);
   width: 28px;
   border: none;
   border-radius: 3px;
-  margin: 0 5px;
-}
-.image-caption {
-  float: right;
-  text-align: right;
-  margin-left: 5px;
-}
-.image-caption span{
-  color:$secondary-color;
-}
-.image-caption a {
-  color: black;
-  text-decoration: none;
+  margin-left: 10px;
 }
