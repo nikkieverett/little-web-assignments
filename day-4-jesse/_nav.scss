@@ -1,10 +1,14 @@
 nav {
- background-color: rgba(0, 0, 0, .5);
+  background-color: none;
  position: fixed;
   left: 0;
   right: 0;
   top: 0;
  z-index: 1;
+}
+.nav-bg-on{
+  background-color: rgba(0, 0, 0, .5);
+
 }
 nav ul {
  margin-right: 40px;
@@ -13,7 +17,7 @@ nav ul {
 nav li img {
   float: left;
   height: 36px;
-  margin: 12px 0 12px 40px;
+  margin: 12px 0 12px 10px;
 }
 nav li a {
   color: white;

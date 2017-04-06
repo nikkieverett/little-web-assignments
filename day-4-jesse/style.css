@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* line 1, _reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +21,59 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 22, _reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 26, _reset.scss */
 body {
   line-height: 1; }
 
+/* line 29, _reset.scss */
 ol, ul {
   list-style: none; }
 
+/* line 32, _reset.scss */
 blockquote, q {
   quotes: none; }
 
+/* line 35, _reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: ‘’;
   content: none; }
 
+/* line 40, _reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 1, _nav.scss */
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: none;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1; }
 
+/* line 9, _nav.scss */
+.nav-bg-on {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* line 13, _nav.scss */
 nav ul {
   margin-right: 40px;
   overflow: auto; }
 
+/* line 17, _nav.scss */
 nav li img {
   float: left;
   height: 36px;
-  margin: 12px 0 12px 40px; }
+  margin: 12px 0 12px 10px; }
 
+/* line 22, _nav.scss */
 nav li a {
   color: white;
   float: right;
@@ -69,10 +84,12 @@ nav li a {
   text-transform: uppercase;
   text-decoration: none; }
 
+/* line 32, _nav.scss */
 nav li a:hover {
   color: #E0CB77; }
 
 /*section 1 background  image*/
+/* line 2, _section1.scss */
 .background-image {
   background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
   background-repeat: no-repeat;
@@ -80,21 +97,24 @@ nav li a:hover {
   height: 700px;
   position: relative; }
 
+/* line 9, _section1.scss */
 .background {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 60px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0; }
 
 /*section 1 text*/
+/* line 18, _section1.scss */
 .container {
-  margin: 0 auto 0 auto;
+  margin: 80px auto 0 auto;
   max-width: 1300px;
   padding: 120px 0 0 0;
   text-align: center; }
 
+/* line 24, _section1.scss */
 .header1 {
   color: #fff;
   font-weight: 100;
@@ -104,9 +124,11 @@ nav li a:hover {
   text-align: center;
   text-transform: uppercase; }
 
+/* line 33, _section1.scss */
 span {
   border-bottom: dotted 1px white; }
 
+/* line 36, _section1.scss */
 .header2 {
   color: #fff;
   font-family: "open sans", sans-serif;
@@ -116,6 +138,7 @@ span {
   margin: 3% auto 3%;
   max-width: 80%; }
 
+/* line 45, _section1.scss */
 .button a {
   border: 2px #E0CB77 solid;
   border-radius: 2px;
@@ -129,28 +152,33 @@ span {
   padding-right: 40px;
   text-decoration: none; }
 
+/* line 58, _section1.scss */
 .button a:hover {
   color: #9e8e4e;
   background: #e0cb77; }
 
+/* line 2, _section2.scss */
 .recent-projects {
   overflow: auto;
   margin: 50px auto 0 auto;
   width: 90%;
   /*outline: 2px green solid;*/ }
 
+/* line 8, _section2.scss */
 .project {
   float: left;
   width: 28.3333%;
   margin: 0 2% 50px 2%;
   /*outline: 2px green solid;*/ }
 
+/* line 14, _section2.scss */
 .project h3, p {
   max-width: 100%;
   text-align: center;
   line-height: 2em;
   /*border: 2px red solid;*/ }
 
+/* line 20, _section2.scss */
 .project h3 {
   font-size: 1.6em;
   font-family: "merriweather", serif;
@@ -159,6 +187,7 @@ span {
   padding-bottom: 15px;
   /*border: solid 2px blue;*/ }
 
+/* line 28, _section2.scss */
 .project p {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
@@ -166,19 +195,23 @@ span {
   color: #8492a4;
   /*border: 2px yellow solid;*/ }
 
+/* line 35, _section2.scss */
 .project img {
   width: 100%; }
 
 @media (max-width: 1116px) {
+  /* line 39, _section2.scss */
   .project {
     width: 45.7%;
     font-size: 80%; } }
 
 @media (max-width: 612px) {
+  /* line 45, _section2.scss */
   .project {
     font-size: 60%; } }
 
 @media (max-width: 500px) {
+  /* line 50, _section2.scss */
   .project {
     float: none;
     width: 100%;
@@ -186,16 +219,19 @@ span {
     font-size: 100%; } }
 
 /*section 3*/
+/* line 2, _section3.scss */
 .story {
   background-color: grey;
   padding: 50px; }
 
+/* line 6, _section3.scss */
 .story-details {
   border: solid 1px yellow;
   height: 400px;
   width: 50%; }
 
 /*section 4*/
+/* line 2, _section4.scss */
 .what-i-do {
   background-color: blue;
   height: 800px;
@@ -203,6 +239,7 @@ span {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+/* line 9, _section4.scss */
 .columns {
   margin: 0 auto;
   overflow: auto;
@@ -210,6 +247,7 @@ span {
   padding-bottom: 0px;
   width: 90%; }
 
+/* line 16, _section4.scss */
 .thing {
   background-color: grey;
   outline: 2px solid red;
@@ -217,6 +255,7 @@ span {
   float: left;
   height: 400px; }
 
+/* line 23, _section4.scss */
 .vader {
   clear: all;
   background-color: grey;
@@ -226,6 +265,7 @@ span {
   margin: 0 auto; }
 
 /*section 5*/
+/* line 2, _section5.scss */
 .links {
   background-color: yellow;
   height: 500px;
@@ -234,6 +274,7 @@ span {
   padding-bottom: 50px;
   width: 90%; }
 
+/* line 10, _section5.scss */
 .article {
   float: left;
   height: 400px;
@@ -241,18 +282,21 @@ span {
   width: 50%; }
 
 /*section 6*/
+/* line 2, _section6.scss */
 .copyright-background {
   background-color: red;
   height: 500px;
   margin: 0 auto;
   width: 100%; }
 
+/* line 8, _section6.scss */
 .sm-container {
   margin: 0 auto;
   outline: solid black 2px;
   width: 20%;
   overflow: auto; }
 
+/* line 14, _section6.scss */
 .social-media {
   background-color: green;
   border-radius: 100px;
