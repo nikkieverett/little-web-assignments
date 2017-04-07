@@ -1,0 +1,32 @@
+.background {
+  /*background-image: url(background.gif);
+  background-repeat: no-repeat;*/
+  width: 960px;
+  margin: auto auto;
+  height: 500px;
+  /*border: solid 10px black;
+  background-position: center;*/
+  /*background-size: contain;*/
+  position: relative;
+}
+
+.ryu{
+  background-image: url(ryu.png);
+  background-position-x: -290px;
+  background-position-y: 0;
+  width: 59px;
+  height: 110px;
+  position: absolute;
+  bottom: 60px;
+  right: 200px;
+}
+.ken{
+  background-image: url(ken.png);
+  width: 97px;
+  height: 117px;
+  background-position-x: -10px;
+  background-position-y: -117px;
+  position: absolute;
+  bottom: 60px;
+  left: 200px;
+}
