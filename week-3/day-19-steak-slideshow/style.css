@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  height: 550px;
+  border: black 2px solid;
+  margin: 10px auto;
+}
+.buttons {
+  margin: 10px auto;
+  width: 960px;
+}
+button {
+  width: 33.3333%;
+  height: 50px;
+  float: left;
+}
+#image {
+  margin: 0 auto;
+}
+#image img{
+  margin: 20px 300px;
+}
+.show{
+  display: inline;
+}
+.hide{
+  display: none;
+}
