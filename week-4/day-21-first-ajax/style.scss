@@ -1,0 +1,28 @@
+@import 'cssreset';
+
+.page {
+  float: left;
+}
+
+body{
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+ul {
+  margin-top: 20px;
+  clear: both;
+}
+li {
+  border-top: 2px solid black;
+  padding: 20px;
+}
+
+div {
+  padding-left: 10px;
+}
