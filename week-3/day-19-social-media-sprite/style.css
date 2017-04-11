@@ -47,18 +47,59 @@ table {
   border-spacing: 0;
 }
 
-.fb, .twitter {
-  width: 100px;
-  height: 98px;
-  background-image: url(social-media-sprite-sheet.png);
-}
 
-.fb:hover {
-  background-position: 0 -98px;
+
+
+
+
+
+body {
+  width: 960px;
+  margin: 0 auto;
 }
-.twitter {
-  background-position: -100px 0;
+div {
+  font-family: 'arial', sans-serif;
+  margin: 20px;
+  display: block;
+  overflow: auto;
+  border-bottom: 1px rgb(221, 221, 221) solid;
 }
-.twitter:hover {
-  background-position: -100px -98px;
+.entry {
+  color: rgb(95, 102, 192);
+}
+img {
+  float: left;
+  margin: 30px;
+}
+.title{
+  margin-top: 20px;
+}
+.author, span {
+  font-size: .8em;
+  display: inline;
+}
+span {
+  color: black;
+}
+.type {
+  display: block;
+}
+.price {
+  color: black;
+}
+.rating{
+  width: 65px;
+  height: 15px;
+  background-image: url(amazonsprite.gif);
+  background-position: -50px 0;
+  border: none;
+}
+.fiveStars {
+  /*width: 65px;
+  height: 15px;
+  background-image: url(amazonsprite.gif);*/
+  background-position: -50px 0;
+}
+.fourStars {
+
 }
