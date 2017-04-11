@@ -1,105 +1,54 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-
-
-
-
-
-body {
-  width: 960px;
-  margin: 0 auto;
-}
-div {
+  border-bottom: 1px solid rgba(221, 221, 221, 1.0);
+  color: rgb(95, 102, 192);
   font-family: 'arial', sans-serif;
-  margin: 20px;
-  display: block;
-  overflow: auto;
-  border-bottom: 1px rgb(221, 221, 221) solid;
+  font-size: .8em;
+  line-height: 1.6em;
+  margin: 0 auto;
+  width: 960px;
 }
 .entry {
-  color: rgb(95, 102, 192);
+  float:left;
+  margin: 1%;
+  width: 14.66667%;
 }
-img {
-  float: left;
-  margin: 30px;
-}
-.title{
+.entry img {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-.author, span {
-  font-size: .8em;
-  display: inline;
+.entry h1{
+  margin-top: 10px;
 }
-span {
+.entry p{
   color: black;
 }
-.type {
-  display: block;
+.entry .type {
+  color: grey;
 }
-.price {
-  color: black;
+.entry .price {
+  color: rgba(196, 79, 4, 1.0);
 }
 .rating{
-  width: 65px;
-  height: 15px;
   background-image: url(amazonsprite.gif);
-  background-position: -50px 0;
   border: none;
+  display: inline-block;
+  height: 15px;
+  width: 65px;
 }
 .fiveStars {
-  /*width: 65px;
-  height: 15px;
-  background-image: url(amazonsprite.gif);*/
   background-position: -50px 0;
 }
 .fourStars {
-
+  background-position: -62px 0;
+}
+.threeStars {
+  background-position: -75px 0;
+}
+.prime {
+  background-image: url(amazonsprite.gif);
+  background-position: -50px -42px;
+  display: inline-block;
+  height: 15px;
+  margin-left: 10px;
+  width: 45px;
 }
