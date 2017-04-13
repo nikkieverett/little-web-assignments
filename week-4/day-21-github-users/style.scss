@@ -1,0 +1,58 @@
+@import 'reset';
+
+body {
+  background-color: rgba(36, 41, 46, 1.0);
+  font-family: 'helvetica', sans-serif;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+#query {
+  display: block;
+  width: 50%;
+  height: 20px;
+  margin: 10px auto;
+}
+.pageIndex {
+  width: 30%;
+  margin: 10px auto;
+}
+#previous, #next{
+  display: none;
+  text-align: center;
+  background-color:rgba(63, 67, 71, .5);
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: rgba(200, 201, 196, 1.0);
+}
+button {
+  border: none;
+}
+#page-count{
+  display: inline-block;
+  color: rgba(200, 201, 196, 1.0);
+  font-size: 2em;
+}
+li{
+  background-color:rgba(63, 67, 71, .5);
+}
+.entry {
+  margin: 10px auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.repoName {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  color: rgba(200, 201, 196, 1.0);
+}
+.user {
+  color: grey;
+  text-decoration: none;
+}

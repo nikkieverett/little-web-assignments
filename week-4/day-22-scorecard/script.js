@@ -1,6 +1,7 @@
 var fs = require('fs');
 
 var fileData = fs.readFile('Most-Recent-Cohorts-Scorecard-Elements.csv', 'utf-8', function(err, data){
+  // console.log(data);
   var lines = data.split('\r\n');
 
   for(var i = 1; i < lines.length-1; i++){

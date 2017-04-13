@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* line 6, _reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,57 +21,100 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
+/* line 27, _reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
+
+/* line 31, _reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
+
+/* line 34, _reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
+
+/* line 37, _reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
+
+/* line 40, _reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
+
+/* line 45, _reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-
+/* line 3, style.scss */
 body {
+  background-color: #24292e;
+  font-family: 'helvetica', sans-serif; }
+
+/* line 7, style.scss */
+.container {
   width: 960px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
+/* line 11, style.scss */
 #query {
   display: block;
-  width: 80%;
-  margin: 10px auto;
-}
-ul {
-  overflow: auto;
-}
+  width: 50%;
+  height: 20px;
+  margin: 10px auto; }
+
+/* line 17, style.scss */
+.pageIndex {
+  width: 30%;
+  margin: 10px auto; }
+
+/* line 21, style.scss */
+#previous, #next {
+  display: none;
+  text-align: center;
+  background-color: rgba(63, 67, 71, 0.5);
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: #c8c9c4; }
+
+/* line 32, style.scss */
+button {
+  border: none; }
+
+/* line 35, style.scss */
+#page-count {
+  display: inline-block;
+  color: #c8c9c4;
+  font-size: 2em; }
+
+/* line 40, style.scss */
+li {
+  background-color: rgba(63, 67, 71, 0.5); }
+
+/* line 43, style.scss */
 .entry {
-  margin: 0 auto;
-  width: 80%;
+  margin: 10px auto;
+  width: 50%;
   padding: 20px;
-  border-top: solid 1px black;
-  border-left: solid 1px black;
-  border-right: solid 1px black;
-}
-.repo {
+  border-radius: 10px; }
+
+/* line 49, style.scss */
+.repoName {
   display: block;
   font-size: 2em;
-}
+  text-decoration: none;
+  color: #c8c9c4; }
+
+/* line 55, style.scss */
 .user {
   color: grey;
-}
+  text-decoration: none; }
