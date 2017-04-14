@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eric is the Worst/Best.. I can't decide.</title>
+    <link rel="stylesheet" href="cssreset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CPSC Violations</h1>
+      <h2>Data taken from the US Consumer Product Safety Commission website.</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Date</td>
+            <td>Product</td>
+            <td>Violation</td>
+            <td>Firm</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input id="product-input"/></td>
+            <td><input id="violation-input"/></td>
+            <td><input id="firm-input"/></td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script type="text/html" id="row-template">
+      <tr>
+        <td>{{date}}</td>
+        <td>{{product}}</td>
+        <td>{{violation}}</td>
+        <td>{{firm}}</td>
+      </tr>
+    </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
