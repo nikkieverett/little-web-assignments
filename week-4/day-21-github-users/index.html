@@ -17,6 +17,15 @@
       <ul id="user-list">
       </ul>
     </div>
+    
+    <script type="text/html" id="row-template">
+      <li class = "entry">
+        <a href='{{html_url}}' class="repoName">{{name}}</a>
+        <a href='{{owner.html_url}}' class="user">by {{owner.login}}</a>
+      </li>
+    </script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
