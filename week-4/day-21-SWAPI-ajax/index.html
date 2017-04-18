@@ -5,6 +5,7 @@
     <title>Ajax Intro</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="page">
       <a href="planets.html">Planets</a>
@@ -12,7 +13,18 @@
     <div class="page">
       <a href="starships.html">Starships</a>
     </div>
+
     <ul id ="people-list"></ul>
+
+    <script type ="text/html" id="row-template">
+      <li>
+        <h2>{{name}}</h2>
+        <div>Gender: {{gender}}</div>
+        <div>Hair Color: {{haircolor}}</div>
+      </li>
+    </script>
+    
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>

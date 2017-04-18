@@ -4,6 +4,7 @@ var fs = require('fs');
 var app = express();
 
 app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
 app.get('/api/violation_data', function(req, res){
   fs.readFile('violation-data.csv', 'utf-8', function(err,data){
@@ -31,6 +32,10 @@ app.get('/api/violation_data', function(req, res){
       items: arr
     });
   });
+});
+
+app.get('/about', function(req, res){
+  res.render('pages/about');
 });
 
 app.listen('4321', function(){

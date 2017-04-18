@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, _cssreset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,59 +23,47 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 27, _cssreset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 31, _cssreset.scss */
 body {
   line-height: 1; }
 
-/* line 34, _cssreset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 37, _cssreset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 40, _cssreset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 45, _cssreset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 3, style.scss */
 .page {
   float: left; }
 
-/* line 7, style.scss */
 body {
   width: 960px;
   margin: 0 auto; }
 
-/* line 12, style.scss */
 h2 {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 1em; }
 
-/* line 17, style.scss */
 ul {
   margin-top: 20px;
   clear: both; }
 
-/* line 21, style.scss */
 li {
   border-top: 2px solid black;
   padding: 20px; }
 
-/* line 26, style.scss */
 div {
   padding-left: 10px; }
