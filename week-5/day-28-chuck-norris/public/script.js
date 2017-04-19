@@ -1,6 +1,6 @@
 function makeAjaxCall(){
   $.ajax({
-    url:'http://api.icndb.com/jokes/random'
+    url:'https://api.icndb.com/jokes/random'
   })
   .done(function(data){
     joke.textContent = data.value.joke;
@@ -8,7 +8,7 @@ function makeAjaxCall(){
 }
 function nameAjaxCall(x, y){
   $.ajax({
-    url: 'http://api.icndb.com/jokes/random?firstName=' + x + '&lastName=' + y
+    url: 'https://api.icndb.com/jokes/random?firstName=' + x + '&lastName=' + y
   })
   .done(function(data){
     joke.innerHTML = data.value.joke;
