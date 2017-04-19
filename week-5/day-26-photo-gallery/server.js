@@ -17,11 +17,6 @@ app.get('/api/pics', function(req, res){
         fullSize:'images/moon-cactus.jpg'
       },
       {
-        name: 'purslane',
-        thumbnail:'images/thumbnail/purslane-t.jpg',
-        fullSize:'images/purslane.jpg'
-      },
-      {
         name: 'dhalia',
         thumbnail:'images/thumbnail/dhalia-t.jpg',
         fullSize:'images/dhalia.jpg'
