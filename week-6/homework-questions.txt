@@ -1,0 +1,15 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+What is es6?
+Whats the difference between a class declaration and a class expression?
+Strict mode?
+Static/prototype methods?
+species??????
+
+Anyone else notice that both articles start with
+
+"classes are syntactical sugar over the prototype-based inheritance"
+
+I'm not sure that I have the best understanding of prototypes yet.. so how is learning classes going to make my life easier???
+
+method definitions vs data properties?
