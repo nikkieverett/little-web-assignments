@@ -8,56 +8,50 @@ import Header from './Header.js';
 import QuerySearch from'./QuerySearch.js';
 import List from './List.js';
 import Filter from './Filter.js';
+import { store, actions } from './Store.js';
 
 
 class App extends React.Component{
   constructor(){
     super();
-    this.state={
-      data: {
-        results:[]
-      },
-      filterText: [],
-      queryText: [],
-    }
+    this.state = store.getState();
+  }
+  componentDidMount(){
+    store.subscribe(() => this.setState(store.getState()));
   }
   makeAjaxCall(){
-
-    var makeUrl = `/api/?i=${this.state.filterText.join(",")}&q=${this.state.queryText.join("%20")}&p=1`;
-    console.log('url', makeUrl);
+    var makeUrl = `/api/?i=${this.state.filters.join(',')}&q=${this.state.queryText}&p=1`;
     $.ajax({
       url: makeUrl
     })
-    .done((data) => {
-      var data = JSON.parse(data);
-      this.setState({
-        data: data
-      })
+    .done((ajaxData) => {
+      let parsedData = JSON.parse(ajaxData);
+      store.dispatch(Object.assign({}, actions.RENDER_DATA, { recipes: parsedData.results }));
     })
   }
   handleFilterInput(input){
-    let copy = this.state.filterText.slice();
-    copy.push(input);
-    this.setState({
-      filterText: copy
-    }, () => this.makeAjaxCall());
+    store.dispatch(Object.assign({}, actions.ON_FILTER_CHANGE, { currentFilter: input }));
   }
   handleFilterRemoveInput(index){
-    let copy = this.state.filterText.slice();
+    let copy = this.state.filters.slice();
     copy.splice(index,1);
-    this.setState({
-      filterText: copy
-    }, () => this.makeAjaxCall())
+    store.dispatch(Object.assign({}, actions.REMOVE_FILTER, { filters: copy }), this.makeAjaxCall());
   }
-  handleQueryInput(input){
-    let copy = this.state.queryText.slice();
-    copy.push(input);
-    copy.map((str)=> {
-      let strings = str.split(' ');
-      this.setState({
-        queryText: strings
-      }, () => this.makeAjaxCall());
-    });
+  handleFiltersList(){
+    console.log('does handle filter list happen first?')
+    let copy = this.state.filters.slice();
+    copy.push(this.state.currentFilter);
+    store.dispatch(Object.assign({}, actions.ADD_FILTER, { filters: copy }));
+  }
+  handleFilterDone(){
+    console.log(this.state.filters);
+    this.makeAjaxCall();
+  }
+  handleQueryInputChange(input){
+    store.dispatch(Object.assign({}, actions.QUERY_TEXT, { queryText: input }));
+  }
+  handleQueryDone(){
+    this.makeAjaxCall();
   }
   render(){
     return(
@@ -66,18 +60,21 @@ class App extends React.Component{
         <div className="bodyContainer">
           <QuerySearch
             queryText={this.state.queryText}
-            onQueryInput={(input) => this.handleQueryInput(input)}
+            onQueryInput={(input) => this.handleQueryInputChange(input)}
+            onQueryDone={() => this.handleQueryDone()}
             ajaxCall={() => this.makeAjaxCall()}
             />
           <List
-            data={this.state.data}
+            recipes={this.state.recipes}
             queryText={this.state.queryText}
-            filterText={this.state.filterText}
+            filterText={this.state.filters}
             />
           <Filter
-            filterText={this.state.filterText}
+            filterText={this.state.filters}
             onFilterInput={(input) => this.handleFilterInput(input)}
             onFilterRemoveInput={(index) => this.handleFilterRemoveInput(index)}
+            updateFiltersList={() => this.handleFiltersList()}
+            onFilterDone={() => this.handleFilterDone()}
             />
         </div>
       </div>

@@ -1,39 +1,41 @@
 // section 2
+@import 'variables';
+
 .recent-projects {
   overflow: auto;
   margin: 50px auto 0 auto;
   width: 90%;
-  /*outline: 2px green solid;*/
 }
 .project {
   float: left;
   width: 28.3333%;
   margin: 0 2% 50px 2%;
-  /*outline: 2px green solid;*/
+  h3, p {
+    max-width: 100%;
+    text-align: center;
+    line-height: 2em;
+  }
+  h3 {
+    font-size: 1.6em;
+    font-family: $main-font;
+    color: $blue;
+    padding-top: 15px;
+  }
+  p {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: $grey;
+  }
+  img {
+    width: 100%;
+  }
 }
-.project h3, p {
-  max-width: 100%;
-  text-align: center;
-  line-height: 2em;
-  /*border: 2px red solid;*/
-}
-.project h3 {
-  font-size: 1.6em;
-  font-family: "merriweather", serif;
-  color: #3195C2;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /*border: solid 2px blue;*/
-}
-.project p {
-  font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #8492a4;
-  /*border: 2px yellow solid;*/
-}
-.project img {
-  width: 100%;
+.project:hover{
+  h3{
+    color: $yellow;
+  }
 }
 @media (max-width: 1116px) {
   .project {

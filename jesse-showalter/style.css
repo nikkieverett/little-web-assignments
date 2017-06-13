@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* line 1, _reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,35 +20,28 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 22, _reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 26, _reset.scss */
 body {
   line-height: 1; }
 
-/* line 29, _reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 32, _reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 35, _reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: ‘’;
   content: none; }
 
-/* line 40, _reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 1, _nav.scss */
 nav {
   background-color: none;
   position: fixed;
@@ -58,22 +50,18 @@ nav {
   top: 0;
   z-index: 1; }
 
-/* line 9, _nav.scss */
 .nav-bg-on {
   background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 13, _nav.scss */
 nav ul {
   margin-right: 40px;
   overflow: auto; }
 
-/* line 17, _nav.scss */
 nav li img {
   float: left;
   height: 36px;
   margin: 12px 0 12px 10px; }
 
-/* line 22, _nav.scss */
 nav li a {
   color: white;
   float: right;
@@ -84,12 +72,10 @@ nav li a {
   text-transform: uppercase;
   text-decoration: none; }
 
-/* line 32, _nav.scss */
 nav li a:hover {
   color: #E0CB77; }
 
 /*section 1 background  image*/
-/* line 2, _section1.scss */
 .background-image {
   background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
   background-repeat: no-repeat;
@@ -97,9 +83,8 @@ nav li a:hover {
   height: 700px;
   position: relative; }
 
-/* line 9, _section1.scss */
 .background {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(39, 45, 53, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -107,111 +92,90 @@ nav li a:hover {
   bottom: 0; }
 
 /*section 1 text*/
-/* line 18, _section1.scss */
 .container {
   margin: 80px auto 0 auto;
   max-width: 1300px;
   padding: 120px 0 0 0;
   text-align: center; }
 
-/* line 24, _section1.scss */
 .header1 {
   color: #fff;
   font-weight: 100;
-  font-family: "merriweather", serif;
+  font-family: "merriweather", sans-serif;
   font-size: 3.2rem;
   line-height: 4rem;
   text-align: center;
   text-transform: uppercase; }
+  .header1 span {
+    border-bottom: dotted 1px white; }
 
-/* line 33, _section1.scss */
-span {
-  border-bottom: dotted 1px white; }
-
-/* line 36, _section1.scss */
 .header2 {
   color: #fff;
-  font-family: "open sans", sans-serif;
+  font-family: "open-sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 2.3rem;
   margin: 3% auto 3%;
   max-width: 80%; }
 
-/* line 45, _section1.scss */
 .button a {
-  border: 2px #E0CB77 solid;
+  border: 3px #e0cb77 solid;
   border-radius: 2px;
   color: white;
-  font-family: "open sans", sans-serif;
-  font-size: 22px;
-  margin-top: 25px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
-  text-decoration: none; }
+  font-family: "open-sans", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: .6px;
+  line-height: 20px;
+  margin-top: 13px;
+  padding: 22.4px 64px;
+  text-decoration: none;
+  text-transform: uppercase; }
 
-/* line 58, _section1.scss */
 .button a:hover {
-  color: #9e8e4e;
-  background: #e0cb77; }
+  color: #88711f;
+  background: #e5d38c; }
 
-/* line 2, _section2.scss */
 .recent-projects {
   overflow: auto;
   margin: 50px auto 0 auto;
-  width: 90%;
-  /*outline: 2px green solid;*/ }
+  width: 90%; }
 
-/* line 8, _section2.scss */
 .project {
   float: left;
   width: 28.3333%;
-  margin: 0 2% 50px 2%;
-  /*outline: 2px green solid;*/ }
+  margin: 0 2% 50px 2%; }
+  .project h3, .project p {
+    max-width: 100%;
+    text-align: center;
+    line-height: 2em; }
+  .project h3 {
+    font-size: 1.6em;
+    font-family: "merriweather", sans-serif;
+    color: #3195C2;
+    padding-top: 15px; }
+  .project p {
+    font-family: "open-sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-style: italic;
+    color: #8492a4; }
+  .project img {
+    width: 100%; }
 
-/* line 14, _section2.scss */
-.project h3, p {
-  max-width: 100%;
-  text-align: center;
-  line-height: 2em;
-  /*border: 2px red solid;*/ }
-
-/* line 20, _section2.scss */
-.project h3 {
-  font-size: 1.6em;
-  font-family: "merriweather", serif;
-  color: #3195C2;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /*border: solid 2px blue;*/ }
-
-/* line 28, _section2.scss */
-.project p {
-  font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #8492a4;
-  /*border: 2px yellow solid;*/ }
-
-/* line 35, _section2.scss */
-.project img {
-  width: 100%; }
+.project:hover h3 {
+  color: #e0cb77; }
 
 @media (max-width: 1116px) {
-  /* line 39, _section2.scss */
   .project {
     width: 45.7%;
     font-size: 80%; } }
 
 @media (max-width: 612px) {
-  /* line 45, _section2.scss */
   .project {
     font-size: 60%; } }
 
 @media (max-width: 500px) {
-  /* line 50, _section2.scss */
   .project {
     float: none;
     width: 100%;
@@ -219,19 +183,51 @@ span {
     font-size: 100%; } }
 
 /*section 3*/
-/* line 2, _section3.scss */
 .story {
-  background-color: grey;
-  padding: 50px; }
+  background-image: url("./banner-working.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  position: relative;
+  overflow: visible;
+  height: 485px; }
 
-/* line 6, _section3.scss */
-.story-details {
-  border: solid 1px yellow;
-  height: 400px;
-  width: 50%; }
+.cover {
+  background-color: rgba(39, 45, 53, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .cover .story-details {
+    width: 50%;
+    margin: 40px;
+    height: 100%; }
+    .cover .story-details h1 {
+      font-family: "merriweather", sans-serif;
+      font-size: 2.6em;
+      font-weight: bold;
+      color: #e0cb77;
+      line-height: 2em;
+      margin-bottom: 20px; }
+    .cover .story-details h2 {
+      font-family: "open-sans", sans-serif;
+      font-size: 20.8px;
+      font-weight: 100;
+      line-height: 2.4em;
+      color: white;
+      margin-bottom: 20px; }
+      .cover .story-details h2 span {
+        color: #3195C2; }
+      .cover .story-details h2 span:hover {
+        color: #88711f;
+        background-color: #e5d38c; }
+    .cover .story-details .button a {
+      display: inline-block;
+      width: 217px;
+      height: 20px;
+      margin-bottom: 40px; }
 
 /*section 4*/
-/* line 2, _section4.scss */
 .what-i-do {
   background-color: blue;
   height: 800px;
@@ -239,7 +235,6 @@ span {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-/* line 9, _section4.scss */
 .columns {
   margin: 0 auto;
   overflow: auto;
@@ -247,7 +242,6 @@ span {
   padding-bottom: 0px;
   width: 90%; }
 
-/* line 16, _section4.scss */
 .thing {
   background-color: grey;
   outline: 2px solid red;
@@ -255,7 +249,6 @@ span {
   float: left;
   height: 400px; }
 
-/* line 23, _section4.scss */
 .vader {
   clear: all;
   background-color: grey;
@@ -265,7 +258,6 @@ span {
   margin: 0 auto; }
 
 /*section 5*/
-/* line 2, _section5.scss */
 .links {
   background-color: yellow;
   height: 500px;
@@ -274,7 +266,6 @@ span {
   padding-bottom: 50px;
   width: 90%; }
 
-/* line 10, _section5.scss */
 .article {
   float: left;
   height: 400px;
@@ -282,21 +273,18 @@ span {
   width: 50%; }
 
 /*section 6*/
-/* line 2, _section6.scss */
 .copyright-background {
   background-color: red;
   height: 500px;
   margin: 0 auto;
   width: 100%; }
 
-/* line 8, _section6.scss */
 .sm-container {
   margin: 0 auto;
   outline: solid black 2px;
   width: 20%;
   overflow: auto; }
 
-/* line 14, _section6.scss */
 .social-media {
   background-color: green;
   border-radius: 100px;

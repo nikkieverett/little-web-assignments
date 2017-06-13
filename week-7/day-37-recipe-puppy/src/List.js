@@ -2,12 +2,12 @@ import React from 'react';
 
 class ListItems extends React.Component{
   render(){
-    var listItems = this.props.data.results.map((result) => {
+    var listItems = this.props.recipes.map((result) => {
       if(result.thumbnail === ''){
         result.thumbnail ="No_Image_Available.png"
       }
     })
-    listItems = this.props.data.results.map((result) => {
+    listItems = this.props.recipes.map((result) => {
       return (
         <li key={result.href}>
           <img src={result.thumbnail} />
@@ -27,7 +27,7 @@ class List extends React.Component{
   render(){
     return(
       <div className="list">
-        <ListItems data={this.props.data} />
+        <ListItems recipes={this.props.recipes} />
       </div>
     );
   }

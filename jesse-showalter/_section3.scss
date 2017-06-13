@@ -1,10 +1,54 @@
 /*section 3*/
+@import 'variables';
+
 .story {
-  background-color: grey;
-  padding: 50px;
+  background-image: url('./banner-working.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  position: relative;
+  overflow: visible;
+  height: 485px;
 }
-.story-details {
-  border: solid 1px yellow;
-  height: 400px;
-  width: 50%;
+.cover{
+  background-color: $opaque-black;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .story-details {
+    width: 50%;
+    margin: 40px;
+    height: 100%;
+    h1{
+      font-family: $main-font;
+      font-size: 2.6em;
+      font-weight: bold;
+      color: $yellow;
+      line-height: 2em;
+      margin-bottom: 20px;
+    }
+    h2{
+      font-family: $secondary-font;
+      font-size: 20.8px;
+      font-weight: 100;
+      line-height: 2.4em;
+      color: white;
+      margin-bottom: 20px;
+      span{
+        color: $blue;
+      }
+      span:hover{
+        color: $button-hover-font;
+        background-color: $button-hover;
+      }
+    }
+    .button a{
+      display: inline-block;
+      width: 217px;
+      height: 20px;
+      margin-bottom: 40px;
+    }
+  }
 }

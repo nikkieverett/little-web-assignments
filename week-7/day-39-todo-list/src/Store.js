@@ -14,9 +14,9 @@ const actions = {
 const reducer = (state = initialState, action) => {
   switch(action.type){
     case 'SEARCH_VALUE_CHANGE':
-      return { input: action.value };
+      return Object.assign({}, state, { input: action.value });
     case 'RENDER_LIST':
-      return { input: '', items: action.items };
+      return Object.assign({}, state, { input: '', items: action.items });
   }
   return state;
 };

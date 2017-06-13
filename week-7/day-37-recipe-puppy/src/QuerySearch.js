@@ -1,11 +1,14 @@
 import React from 'react';
 
 class QuerySearch extends React.Component{
-  onQueryChange(evt){
+  onQueryKeyUp(evt){
     if(evt.keyCode === 13){
-      this.props.onQueryInput(evt.target.value);
       evt.target.value = '';
+      this.props.onQueryDone();
     }
+  }
+  onQueryChange(evt){
+    this.props.onQueryInput(evt.target.value);
   }
   render(){
     return(
@@ -14,7 +17,8 @@ class QuerySearch extends React.Component{
           type="text"
           name="QuerySearch"
           placeholder="Search Query"
-          onKeyUp={(evt) => this.onQueryChange(evt)}
+          onChange={(evt) => this.onQueryChange(evt)}
+          onKeyUp={(evt) => this.onQueryKeyUp(evt)}
         />
       </div>
     );

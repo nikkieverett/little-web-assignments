@@ -1,4 +1,6 @@
 /*section 1 background  image*/
+@import 'variables';
+
 .background-image{
   background-image: url("http://www.jesseshowalter.com/assets/images/jesse-jump.jpg");
   background-repeat: no-repeat;
@@ -7,7 +9,7 @@
   position: relative;
 }
 .background {
-  background-color: rgba(0,0,0,0.5);
+  background-color: $opaque-black;
   position: absolute;
     top: 0;
     left: 0;
@@ -24,18 +26,20 @@
 .header1 {
   color: #fff;
   font-weight: 100;
-  font-family: "merriweather", serif;
+  font-family: $main-font;
   font-size: 3.2rem;
   line-height: 4rem;
   text-align: center;
   text-transform: uppercase;
+  span {
+    border-bottom: dotted 1px white;
+  }
 }
-span {
-  border-bottom: dotted 1px white;
-}
+
+
 .header2 {
   color: #fff;
-  font-family: "open sans", sans-serif;
+  font-family: $secondary-font;
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 2.3rem;
@@ -43,19 +47,20 @@ span {
   max-width: 80%;
 }
 .button a {
-  border: 2px #E0CB77 solid;
+  border: 3px $yellow solid;
   border-radius: 2px;
   color: white;
-  font-family: "open sans", sans-serif;
-  font-size: 22px;
-  margin-top: 25px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 40px;
-  padding-right: 40px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: .6px;
+  line-height: 20px;
+  margin-top: 13px;
+  padding: 22.4px 64px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .button a:hover {
-  color: rgba(158, 142, 78, 1.0);
-  background: #e0cb77;
+  color: $button-hover-font;
+  background: $button-hover;
 }
