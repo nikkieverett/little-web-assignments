@@ -1,7 +1,8 @@
 /*section 4*/
+@import 'variables';
+
 .what-i-do{
-  background-color: blue;
-  height: 800px;
+  background-image: url('./images/pattern.jpg');
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -10,21 +11,77 @@
   margin:0 auto;
   overflow: auto;
   padding-top: 20px;
-  padding-bottom: 0px;
+
   width: 90%;
 }
 .thing {
-  background-color: grey;
-  outline: 2px solid red;
-  width: 25%;
+  background-color: white;
+  width: 21%;
   float: left;
   height: 400px;
+  padding: 2%;
+  padding-top: 140px;
+  img{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  h1{
+    font-family: $main-font;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: $black-font-color;
+    line-height: 64px;
+    text-align: center;
+  }
+  h2{
+    font-family: $secondary-font;
+    font-size: 20.8px;
+    font-weight: 100;
+    line-height: 36.8px;
+    text-align: center;
+    // padding: 20px;
+    padding-top: 5px;
+    color: $grey-font-color;
+  }
+
 }
 .vader {
   clear: all;
-  background-color: grey;
-  outline: 2px solid red;
+  background-color: white;
   width: 90%;
-  height: 400px;
+  height: 100%;
   margin: 0 auto;
+  padding-bottom: 100px;
+  .quote{
+    width: 80%;
+    margin: 0 auto;
+    border-top: dashed 1px $grey;
+    padding-top: 80px;
+    h2{
+      font-family: $secondary-font;
+      font-size: 20.8px;
+      font-weight: 100;
+      line-height: 36.8px;
+      text-align: center;
+      // padding: 20px;
+      padding-top: 5px;
+      color: $grey-font-color;
+      font-style: italic;
+    }
+    .vader-image{
+      background-image: url('./images/darth-vader.jpg');
+      background-size: 85px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 5px;
+      width: 88px;
+      height: 88px;
+      border-radius: 100px;
+      border: solid 1px $light-grey;
+      display: block;
+      margin: 10px auto;
+    }
+  }
 }
