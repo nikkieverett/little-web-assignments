@@ -304,18 +304,55 @@ nav li a:hover {
 
 /*section 5*/
 .links {
-  background-color: yellow;
   height: 500px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 90%; }
 
+#hawaii, #johne {
+  background-size: cover;
+  height: 100%;
+  background-repeat: stretch;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  float: left;
+  height: 400px;
+  width: 48%;
+  margin: 1%;
+  z-index: -1; }
+
+#hawaii {
+  background-image: url("./images/hawaiifirstBanner.jpg"); }
+
+#johne {
+  background-image: url("./images/johnedwards.jpg"); }
+
 .article {
   float: left;
   height: 400px;
-  outline: black 2px solid;
-  width: 50%; }
+  width: 100%;
+  background-color: rgba(39, 45, 53, 0.5);
+  z-index: 1; }
+
+.content {
+  width: 70%;
+  margin: 150px auto;
+  text-align: center; }
+  .content h1 {
+    font-style: "merriweather", sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .content .button a {
+    text-align: center;
+    display: block;
+    font-size: 19px;
+    width: 55%;
+    margin: 0 auto; }
 
 /*section 6*/
 .copyright-background {
