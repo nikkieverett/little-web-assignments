@@ -24,7 +24,7 @@ var button = document.querySelector('#add-thing');
 var container = document.querySelector('.all-the-circles');
 
 container.addEventListener('click', function(evt){
-  console.log(evt);
+  console.log(evt.target.tagName);
   if (evt.target.tagName === 'LI')
   evt.target.classList.toggle('clicked');
 });
